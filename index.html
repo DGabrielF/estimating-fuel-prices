@@ -1,32 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora de Reabastecimento</title>
+  <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
-  <header></header>
-  <body>
-    <h1>
-      calculador de combustível
-    </h1>
-    <p>
-      preço
-    </p>
-    <input type="text">
-    <p>
-      consumo do veículo
-    </p>
-    <input type="text">
-    <p>
-      distância percorrida
-    </p>
-    <input type="text">
-    <p>
-      estimativa de custo
-    </p>
-  </body>
-  <footer></footer>
+  <div class="save-money">
+    <header>
+      <h1>
+        calculador de reabastecimento
+      </h1>
+    </header>
+    <div class="form-body">
+      <div>
+        <p>
+          preço do combustível
+        </p>
+        <input id="price" type="text">
+        <p>
+          km rodados por litro
+        </p>
+        <input id="rate" type="text">
+        <p>
+          distância a percorrer
+        </p>
+        <input id="distance" type="text">
+      </div>
+      <button onclick="calculatePrice()">calcular</button>
+      <p>estimativa de custo</p>
+      <div id="result"></div>
+    </div>
+    <h2>Não fique no meio do caminho!!!</h2>
+    <p>Evite transtornos. Programe a sua viagem e vivêncie apenas o melhor da vida</p>
+    <footer>
+      <p>Esta aplicação é a resolução de um exercício de um curso oferecido por:</p>
+      <img class="dio-logo" alt="DIO Logo" src="./src/imiages/dio-logo.png">
+      <img class="ifood-logo" alt="IFood Logo" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/90/IFood_logo.svg/512px-IFood_logo.svg.png" decoding="async" width="512" height="271" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/90/IFood_logo.svg/768px-IFood_logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/90/IFood_logo.svg/1024px-IFood_logo.svg.png 2x" data-file-width="512" data-file-height="271">
+    </footer>
+  </div>
 </body>
+<script src="./main.js"></script>
 </html>
