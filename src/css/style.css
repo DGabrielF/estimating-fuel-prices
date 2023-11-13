@@ -98,6 +98,15 @@ footer p {
   width: 5%;
   height: auto;
 }
+#error {
+  color: #ff1010;
+  margin: 0 30px;
+}
+#fuel {
+  color: #ff1010;
+  font-weight: 700;
+  margin: 0 30px;
+}
 #result {
   min-width: 100px;
   width: 80%;

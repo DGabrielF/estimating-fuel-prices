@@ -27,11 +27,13 @@
         <p>
           km rodados por litro
         </p>
-        <input id="rate" type="text">
+        <input onchange="e => emptyEntryVerifier(e.target)" id="rate" type="text">
+        <div id="error"></div>
         <p>
           distância a percorrer
         </p>
         <input id="distance" type="text">
+        <div id="error"></div>
       </div>
       <button onclick="calculatePrice()">calcular</button>
       <p>estimativa de custo</p>
