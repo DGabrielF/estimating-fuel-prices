@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./src/images/blood_drop_droplet_oil_water_icon_123324.png">
   <title>Calculadora de Reabastecimento</title>
   <link rel="stylesheet" href="./src/css/style.css">
 </head>
@@ -16,9 +17,13 @@
     <div class="form-body">
       <div>
         <p>
-          preço do combustível
+          preço da gasolina
         </p>
-        <input id="price" type="text">
+        <input id="gasoline" type="text">
+        <p>
+          preço do alcool
+        </p>
+        <input id="alcohol" type="text">
         <p>
           km rodados por litro
         </p>
@@ -30,13 +35,14 @@
       </div>
       <button onclick="calculatePrice()">calcular</button>
       <p>estimativa de custo</p>
+      <div id="fuel"></div>
       <div id="result"></div>
     </div>
     <h2>Não fique no meio do caminho!!!</h2>
-    <p>Evite transtornos. Programe a sua viagem e vivêncie apenas o melhor da vida</p>
+    <p>Evite transtornos. Programe sua viagem e vivêncie apenas o melhor da vida</p>
     <footer>
       <p>Esta aplicação é a resolução de um exercício de um curso oferecido por:</p>
-      <img class="dio-logo" alt="DIO Logo" src="./src/imiages/dio-logo.png">
+      <img class="dio-logo" alt="DIO Logo" src="./src/images/dio-logo.png">
       <img class="ifood-logo" alt="IFood Logo" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/90/IFood_logo.svg/512px-IFood_logo.svg.png" decoding="async" width="512" height="271" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/90/IFood_logo.svg/768px-IFood_logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/90/IFood_logo.svg/1024px-IFood_logo.svg.png 2x" data-file-width="512" data-file-height="271">
     </footer>
   </div>
